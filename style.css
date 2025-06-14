@@ -1,0 +1,53 @@
+html
+{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+.nonl { display: inline; }
+
+/* TODO: Make it smaller */
+#content
+{
+    /* Make sure the width is 70% of the page size */
+    min-width: 70vw;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Make the height most of the screen */
+    min-height: 90vw;
+    max-height: 90vw;
+}
+#navzone
+{
+    position: fixed;
+    right: 2em;
+
+    font-size: 1em;
+}
+footer
+{
+    background-color: #222;
+    color: #eee;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (orientation: portrait) 
+{
+    #content
+    {
+        min-width: 95vw;
+        max-width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #navzone { font-size: 2em; }
+}
