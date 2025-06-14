@@ -42,6 +42,10 @@ footer
 
 @media (orientation: portrait) 
 {
+    html
+    {
+        font-size: 20pt;
+    }
     #content
     {
         min-width: 95vw;
