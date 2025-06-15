@@ -3,6 +3,10 @@ html
     background-color: #eee;
     font-family: sans-serif;
 }
+.x8831 
+{
+    image-rendering: crisp-edges;
+}
 .nonl { display: inline; }
 
 /* TODO: Make it smaller */
