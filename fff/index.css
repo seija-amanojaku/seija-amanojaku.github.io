@@ -1,0 +1,5 @@
+.calculator {
+    --r: 396 / 224;
+    aspect-ratio: var(--r);
+    min-width: 95%;
+}
