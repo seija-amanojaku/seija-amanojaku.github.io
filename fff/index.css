@@ -1,5 +1,12 @@
-.calculator {
+#calculator {
     --r: 396 / 224;
     aspect-ratio: var(--r);
     min-width: 95%;
+    image-rendering: pixelated;
+}
+body {
+    background-color: black;
+    color: #eee;
+    background-image: url("https://en.touhouwiki.net/images/0/06/Feza_www.png");
+    image-rendering: pixelated;
 }
