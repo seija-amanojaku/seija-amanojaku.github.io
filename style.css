@@ -1,6 +1,5 @@
 html
 {
-    background-color: #eee;
     font-family: sans-serif;
 }
 .x8831 
@@ -17,17 +16,13 @@ html
     max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
-
+    
+    padding-left: 1vw;
+    padding-right: 1vw;
     /* Make the height most of the screen */
     min-height: 90vw;
-    max-height: 90vw;
-}
-#navzone
-{
-    position: fixed;
-    right: 2em;
-
-    font-size: 1em;
+    background: none;
+    background-color: #eee;
 }
 footer
 {
@@ -43,6 +38,28 @@ footer
     width: 100%;
     max-width: 100%;
 }
+body
+{
+    background: linear-gradient(to bottom, rgb(0,0,0,0%), rgb(0,0,0,30%) 100vh), repeating-linear-gradient(40deg, #888, #888 2vw, #aaa 2vw, #aaa 4vw);
+}
+a:link
+{
+    color: #65a2c6;
+}
+a:visited
+{
+    color: #bedead;
+}
+#head
+{
+    background-color: #222;
+    color: #eee;
+}
+#navzone
+{
+    float: right;
+    font-size: 1em;
+}
 
 @media (orientation: portrait) 
 {
@@ -56,3 +73,4 @@ footer
     }
     #navzone { font-size: 2em; }
 }
+
