@@ -3,11 +3,21 @@ html
     font-family: sans-serif;
     font-size: 1.5em;
 }
-.x8831 
+.pixel
+{
+    image-rendering: crisp-edges;
+}
+.x8831
 {
     image-rendering: crisp-edges;
 }
 .nonl { display: inline; }
+.picture-zone
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* TODO: Make it smaller */
 #content
@@ -24,6 +34,10 @@ html
     min-height: 90vw;
     background: none;
     background-color: #eee;
+
+    border-style: solid;
+    border-top: none;
+    border-color: #333;
 }
 footer
 {
@@ -60,6 +74,13 @@ a:visited
 {
     float: right;
     font-size: 1em;
+}
+#arivertisment
+{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (orientation: portrait) 
