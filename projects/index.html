@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='/style.css' type='text/css' />
+        <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+        <title>LDASite | Projects</title>
+    </head>
+    <body>
+        <div id='head'>
+            <span><img src='/media/evilnitori.png' style='max-height:2em;'/><h1 class='nonl'>LDASite Mk. <a href='/third.html'>III</a></h1></span>
+            <span id='navzone'>
+                <a href='/'>Home</a> |
+                <a rel='me' href='https://masto.doskel.net/@lda'>Mastodon</a> | 
+                <a href='https://git.planet-casio.com/lda'>Git (PC)</a> | 
+                <a href='https://github.com/seija-amanojaku'>GitHub</a> | 
+                <a href='#'>Projects</a>
+            </span>
+        </div>
+        <div id='arivertisment'>
+            <iframe
+                src="https://ad.ari.lt/ads/embed?from=seija-amanojaku.github.io"
+                sandbox="allow-popups allow-popups-to-escape-sandbox"
+                referrerpolicy="no-referrer"
+                title="An embed showing a silly image and author information."
+                style="border:none;max-width:100%"
+                width="722"
+                height="98"
+                loading="lazy"
+                role="img"> 
+            </iframe>
+        </div>
+        <div id='content'>
+            <p>Over the years, I've got the chance to start quite a set of <em>projects</em>.</p>
+            <p>Most of them "perish": they stop being maintained, either because I got bored of them 
+            or because they were "done". I didn't have anything to add to them.</p>
+            <p>As such, it's rare for one of them get to "flourish" into something I keep working on. 
+            I hope one day a couple of these get to "flourish" into something useful.</p>
+            <p>Oh wait! Sorry for the change of tone! Here are some descriptions for those that I 
+            actually put out! (this only really includes stuff starting from around when I made that 
+            website...)</p>
+
+            <h1><a href='https://git.planet-casio.com/lda/libraiko'>libraiko</a>: an experimental sound synth</h1>
+            <p>
+                One of my latest projects has been <code>libraiko</code>. It's purpose is quite simple:
+                to "emulate" a fantasy sound chip with some wild capabilities, like 24 channels of 
+                wavetable synth, envelopes, FM/RM modulation, and ideally fun filters, all on SH4-based 
+                CASIO calculators!
+            </p>
+            <p>
+                I wrote this for 3 big reasons:
+                <ol>
+                    <li>
+                        I needed a way to synthesise sounds for <em>a certain something</em>
+
+                    </li>
+                    <li>
+                        I wanted to see how far I could go by using the SH4AL-DSP's... DSP for 
+                        it's <em>intended</em> purpose
+                        <ul>
+                            <li>
+                                (this is why I used a wavetable as a base, as we have 8K of YRAM, 
+                                which can be read <em>very</em> quickly!)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        I needed an excuse to learn music theory and composing... and to make a tracker.
+                    </li>
+                </ol>
+                And I can, for one, state that the DSP's ability to do many things in one single instruction,
+                combined with the saturating arithmetic it boasts for basically <em>free</em> (seriously, it's 
+                just one <code>SETS</code> away!), make it more than suited for that use!
+            </p>
+            <h2>Example sounds</h2>
+            <div class='audio-zone'>
+                <audio controls style="margin: 0 auto; display: block;" src="/media/raiko-adsr.ogg"></audio>
+            </div>
+            <div class='audio-zone'>
+                (Test of Raiko's ADSR envelopes on <a href='https://onlinesequencer.net/5149253#'>this</a> MIDI arrange's piano of Watatsuki Spell Card)
+            </div>
+
+        </div>
+    </body>
+    <footer>
+        <script src='/index.js'></script>
+        LDA
+    </footer>
+</html>

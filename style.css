@@ -18,6 +18,10 @@ html
     justify-content: center;
     align-items: center;
 }
+.audio-zone
+{
+    text-align: center;
+}
 
 /* TODO: Make it smaller */
 #content
